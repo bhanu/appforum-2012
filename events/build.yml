@@ -1,0 +1,24 @@
+#sdk: "/opt/local/lib/ruby/gems/1.8/gems/rhodes-3.3.3"
+sdkversion: 3.3.3
+name: events
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.events
+  BundleURLScheme: events
+wp:
+  productid: '54abdc00-915f-012f-2d25-60c54789b794'
+symbian:
+  uid: '0xebf72c50'
+android:
+  version: 2.3.3
+
+extensions: ["json", "another-extension"]

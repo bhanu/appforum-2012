@@ -1,0 +1,24 @@
+#sdk: "/opt/local/lib/ruby/gems/1.8/gems/rhodes-3.3.3"
+sdkversion: 3.3.3
+name: second
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.second
+  BundleURLScheme: second
+wp:
+  productid: 'dda073a0-9215-012f-2d27-60c54789b794'
+symbian:
+  uid: '0xed36df31'
+android:
+  version: 2.3.3
+
+extensions: ["json", "another-extension"]

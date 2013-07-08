@@ -1,0 +1,104 @@
+<div data-role="page" id="home">
+
+  <div data-role="header">
+    <h1> Lists Demo </h1>
+  </div>
+
+  <div data-role="content" id="home">
+
+    <h2>A list view</h2>
+ 
+    <!-- data-inset makes the list be an inset in the page. Otherwise, it streches
+         to fill out the width of the page -->
+
+    <ul data-role="listview" data-inset="true">
+      <li> Treasure Island </li>
+      <li> The Time Machine </li>
+      <li> Robinson Crusoe </li>
+      <li> War and Peace </li>
+    </ul>
+     
+    <h2>A list of links</h2>
+ 
+    <ul data-role="listview" data-inset="true">
+      <li> <a href="#">Treasure Island</a> </li>
+      <li> <a href="#">The Time Machine</a> </li>
+      <li> <a href="#">Robinson Crusoe</a> </li>
+      <li> <a href="#warandpeace">War and Peace</a> </li>
+    </ul>
+     
+    <h2>A split button list with filter</h2>
+ 
+    <!-- data-filter="true" to a ul or an ol makes the list searchable -->
+
+    <ul data-role="listview" data-inset="true" data-filter="true">
+
+      <!-- Since we are placing two links inside an li, we see a split-button list -->
+
+      <li>
+        <a href="#">Treasure Island</a>
+        <a href="#">Buy this book</a>
+      </li>
+      <li>
+        <a href="#">The Time Machine</a>
+        <a href="#">Buy this book</a>
+      </li>
+      <li>
+        <a href="#">Robinson Crusoe</a>
+        <a href="#">Buy this book</a>
+      </li>
+      <li>
+        <a href="#warandpeace">War and Peace</a>
+        <a href="#buywap">Buy this book</a>
+      </li>
+    </ul>
+ 
+    <h2>A list with count bubbles</h2>
+ 
+    <!-- Adding an element with ui-li-count in a list item shows a count bubble -->
+
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#">Treasure Island</a> <span class="ui-li-count">4</span></li>
+      <li><a href="#">The Time Machine</a> <span class="ui-li-count">0</span></li>
+      <li><a href="#">Robinson Crusoe</a> <span class="ui-li-count">2</span></li>      
+      <li><a href="#">War and Peace</a> <span class="ui-li-count">12</span></li>      
+    </ul>
+     
+
+  </div>
+
+</div>
+
+<div data-role="page" id="warandpeace">
+
+  <div data-role="header">
+    <h1> War and Peace </h1>
+  </div>
+
+  <div data-role="content">
+    Author: Leo Tolstoy <br/>
+    Published: 1869 <p/>
+
+    <a href="#home" data-transition="flip">Back</a>
+
+  </div>
+
+</div>
+
+<div data-role="page" id="buywap">
+
+  <div data-role="header">
+    <h1> War and Peace </h1>
+  </div>
+
+  <div data-role="content">
+    Price: $12.99 <br/>
+    Quantity: 12 <p/>
+    Total: $155.88 <p/>
+
+    <a href="#home" data-transition="slide">Back</a>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,83 @@
+<div data-role="page">
+
+  <div data-role="content">
+
+    <div data-role="fieldcontain">
+
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" id="name" value=""  />
+
+      <label for="name">Your Age:</label>
+      <input type="text" name="age" id="age" value=""  />
+
+    </div>
+
+    <div data-role="controlgroup">
+
+      <legend>What's your favorite sport?</legend>
+
+      <input type="checkbox" name="basketball" id="basketball" class="custom" data-theme="e" />
+
+      <label for="basketball">Basketball</label>
+                                    
+      <input type="checkbox" name="tennis" id="tennis" class="custom" data-theme="c" />
+
+      <label for="tennis">Tennis</label>
+                                                  
+      <input type="checkbox" name="baseball" id="baseball" class="custom" data-theme="b" />
+
+      <label for="baseball">Baseball</label>
+                                                
+    </div>    
+
+    <div data-role="fieldcontain">
+
+      <label for="quantity">Play Days in a month</label>
+      <input type="range" name="quantity" id="quantity" value="1" min="1" max="31"  />
+
+    </div>
+
+    <div data-role="fieldcontain">
+
+      <label for="weekends">Weekends Off?</label>
+        <select name="weekends" id="weekends" data-role="slider">
+          <option value="off">No</option>
+          <option value="on">Yes</option>
+        </select> 
+
+    </div>
+
+    <div data-role="fieldcontain">
+
+       <label for="store">Play Location:</label>
+
+       <!-- selects are automatically enhanced. To turn this off, set data-role="none" -->
+
+        <select name="store" id="store">
+          <option value="superdome">Superdome </option>
+          <option value="madisonsquaregarden">Madison Square Garden</option>
+          <option value="mainStreet">Main Street</option>
+          <option value="firststreet">1st Street</option>
+        </select>
+
+    </div>
+      
+    <div class="ui-body ui-body-b">
+
+      <fieldset class="ui-grid-a">
+
+        <!--
+        <div class="ui-block-a"><button type="submit" data-theme="d">Cancel</button></div>
+        <div class="ui-block-b"><button type="submit" data-theme="a">Submit Answers</button></div>     
+        -->
+
+        <div class="ui-block-a"><button type="submit">Cancel</button></div>
+        <div class="ui-block-b"><button type="submit">Submit Answers</button></div>     
+
+      </fieldset>
+
+    </div>
+      
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+#sdk: "/opt/local/lib/ruby/gems/1.8/gems/rhodes-3.3.3"
+sdkversion: 3.3.3
+name: first_jqm
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.firstjqm
+  BundleURLScheme: firstjqm
+wp:
+  productid: 'b8e0a4e0-8f70-012f-2d21-60c54789b794'
+symbian:
+  uid: '0xe153a0d7'
+android:
+  version: 2.3.3
+
+extensions: ["json", "another-extension"]
